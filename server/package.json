@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "ken-friss-director",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "client": "npm start --prefix ../client",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "imbd",
+    "director"
+  ],
+  "author": "codee-palmer",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "concurrently": "^5.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.4",
+    "nodemon": "^2.0.2"
+  }
+}

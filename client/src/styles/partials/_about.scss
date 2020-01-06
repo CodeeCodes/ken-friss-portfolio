@@ -1,0 +1,37 @@
+.about {
+  margin: 60px 5%;
+
+  &__text {
+    color: white;
+    width: 100%;
+    &-image {
+      &-large {
+        height: 300px;
+        width: 100%;
+      }
+    }
+  }
+  &__heading {
+    color: white;
+  }
+}
+
+@include medium {
+  .about {
+    width: 50%;
+    margin-left: 400px;
+
+    &__text {
+      color: white;
+      &-image {
+        &-large {
+          height: 300px;
+          width: 40%;
+        }
+      }
+    }
+    &__heading {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.header {
+  &__heading {
+    color: $red;
+  }
+  input[type="checkbox"] {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+  }
+  input[type="checkbox"]:checked ~ &__icon::before {
+    content: "Close";
+  }
+  &__icon {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: $black;
+  }
+  &__icon::before {
+    content: "Menu";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: $red;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+  }
+
+  ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 350px;
+    left: -350px;
+    height: 100vh;
+    background-color: $black;
+    transition: 0.5s;
+    z-index: 1;
+    overflow-y: auto;
+    list-style: none;
+  }
+  input[type="checkbox"]:checked ~ ul {
+    left: 0;
+  }
+  ul li a {
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-weight: 700;
+    transition: ease 0.3s;
+
+    &:hover {
+      transform: scale(1.6);
+      margin-left: 90px;
+    }
+  }
+  &__list {
+    &-image {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      margin-top: 50px;
+    }
+    &-heading {
+      color: white;
+      padding-top: 20px;
+    }
+  }
+}
+@include medium {
+  .header {
+    &__icon {
+      display: none;
+    }
+    ul {
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin: 0;
+      box-sizing: border-box;
+      width: 350px;
+      height: 100vh;
+      background-color: $black;
+      transition: 0.5s;
+      z-index: 1;
+      overflow-y: auto;
+      list-style: none;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.gallery {
+  padding-left: 0;
+  transition: 0.5s;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 5%;
+
+  &__image {
+    width: 100%;
+    height: 250px;
+    margin: 10px 0;
+  }
+}
+input[type="checkbox"]:checked ~ .gallery::before {
+  padding-left: 0;
+}
+@include medium {
+  .gallery {
+    padding-left: 400px;
+    transition: 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+
+    &__image {
+      width: 29%;
+      height: 250px;
+      margin: 20px;
+    }
+  }
+  input[type="checkbox"]:checked ~ .gallery::before {
+    padding-left: 0;
+  }
+}
