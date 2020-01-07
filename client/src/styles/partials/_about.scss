@@ -5,6 +5,7 @@
     color: white;
     width: 100%;
     &-image {
+      width: 100%;
       &-large {
         height: 300px;
         width: 100%;
@@ -14,19 +15,27 @@
   &__heading {
     color: white;
   }
+  &__image {
+    &-div {
+    }
+  }
 }
 
 @include medium {
   .about {
-    width: 50%;
-    margin-left: 400px;
+    width: 70%;
+    margin-left: 425px;
+    margin-bottom: 0;
 
     &__text {
       color: white;
       &-image {
+        width: 100%;
         &-large {
-          height: 300px;
-          width: 40%;
+          height: 420px;
+          width: 100%;
+          image-rendering: pixelated;
+          image-resolution: crisp-edges;
         }
       }
     }

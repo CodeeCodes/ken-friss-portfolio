@@ -6,7 +6,7 @@
 html,
 body {
   margin: 0;
-  font-family: "Actor", sans-serif;
+  font-family: "Courier Prime", monospace;
   color: #323232;
   height: 100vh;
   box-sizing: border-box;
@@ -21,6 +21,18 @@ body {
 .App,
 body {
   background-color: $gray;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../assets/photos/pic20.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* Enforces border-box for site */

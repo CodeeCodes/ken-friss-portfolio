@@ -4,7 +4,16 @@ import profilePic from "../assets/photos/ken-profile.jpg";
 export default function About() {
   return (
     <div className="about">
-      <h1 className="about__heading">About Me</h1>
+      <h1 className="about__heading">About </h1>
+      <div className="about__image-div">
+        <img
+          className="about__text-image-large"
+          src={profilePic}
+          alt="Ken_Friss_Director_About_Page"
+          width="850"
+          height="567"
+        ></img>
+      </div>
       <p className="about__text">
         Ken is a Daytime Emmy-nominated and Leo Award winning director who has
         spent the last two decades developing his craft in the TV and film
@@ -27,20 +36,17 @@ export default function About() {
         or meet Tom Waits. Either would be fantastic.
       </p>
       <img
-        className="about__text-image-large"
-        src={profilePic}
-        alt="Ken_Friss_Director_About_Page"
-        width="850"
-        height="567"
-      ></img>
-      <img
         classname="about__text-image"
         src="http://kenfriss.com/wp-content/uploads/2014/12/MV5BMjAzOTcxMDA2Nl5BMl5BcG5nXkFtZTcwMTc1MzIzOA@@._V1_-300x144.png"
         alt="MV5BMjAzOTcxMDA2Nl5BMl5BcG5nXkFtZTcwMTc1MzIzOA@@._V1_"
         width="100"
         height="48"
       ></img>{" "}
-      <a href="http://www.imdb.com/name/nm0295919/" target="_blank">
+      <a
+        href="http://www.imdb.com/name/nm0295919/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Ken’s IMDB Page
       </a>{" "}
     </div>
