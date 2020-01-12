@@ -1,5 +1,5 @@
 import React from "react";
-
+import uuid from "uuid/v4";
 import pic1 from "../assets/photos/pic1.jpg";
 import pic2 from "../assets/photos/pic2.jpg";
 import pic3 from "../assets/photos/pic3.jpg";
@@ -22,7 +22,6 @@ import pic19 from "../assets/photos/pic19.jpg";
 import pic20 from "../assets/photos/pic20.jpg";
 import pic21 from "../assets/photos/pic21.jpg";
 import pic22 from "../assets/photos/pic22.jpg";
-const uuid = require("uuid/v4");
 export default function Gallery() {
   const images = [
     pic1,
@@ -48,7 +47,7 @@ export default function Gallery() {
     pic21,
     pic22
   ];
-
+  console.log(uuid);
   const galleryImage = images.map(image => {
     return <img src={image} alt="gallery" className="gallery__image" />;
   });

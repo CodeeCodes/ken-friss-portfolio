@@ -204,14 +204,12 @@ input[type="checkbox"]:checked ~ .header__icon::before {
     margin: 10px;
     -webkit-transition: ease 0.1s;
     transition: ease 0.1s;
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
   }
   .gallery__image:hover {
     -webkit-transform: scale(1.01);
             transform: scale(1.01);
-    -webkit-filter: unset;
-            filter: unset;
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
     z-index: 1;
   }
 }
@@ -241,24 +239,34 @@ input[type="checkbox"]:checked ~ .header__icon::before {
 @media only screen and (min-width: 768px) {
   .about {
     width: 70%;
-    margin-left: 425px;
+    margin-left: 390px;
     margin-bottom: 0;
   }
   .about__text {
     color: white;
   }
   .about__text-image {
-    width: 100%;
+    width: 15%;
   }
   .about__text-image-large {
     height: 420px;
-    width: 100%;
+    width: 70%;
+    margin-left: 14%;
     -ms-interpolation-mode: nearest-neighbor;
         image-rendering: -webkit-optimize-contrast;
         image-rendering: -moz-crisp-edges;
         image-rendering: -o-pixelated;
         image-rendering: pixelated;
     image-resolution: crisp-edges;
+  }
+  .about__text-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .about__heading {
     color: white;

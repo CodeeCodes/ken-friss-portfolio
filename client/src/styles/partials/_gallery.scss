@@ -26,11 +26,10 @@
       height: 250px;
       margin: 10px;
       transition: ease 0.1s;
-      filter: grayscale(100%);
 
       &:hover {
         transform: scale(1.01);
-        filter: unset;
+        filter: blur(1px);
         z-index: 1;
       }
     }

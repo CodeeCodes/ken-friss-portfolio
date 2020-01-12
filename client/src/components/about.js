@@ -35,20 +35,22 @@ export default function About() {
         touch football league. He is still hoping to win a championship. That,
         or meet Tom Waits. Either would be fantastic.
       </p>
-      <img
-        classname="about__text-image"
-        src="http://kenfriss.com/wp-content/uploads/2014/12/MV5BMjAzOTcxMDA2Nl5BMl5BcG5nXkFtZTcwMTc1MzIzOA@@._V1_-300x144.png"
-        alt="MV5BMjAzOTcxMDA2Nl5BMl5BcG5nXkFtZTcwMTc1MzIzOA@@._V1_"
-        width="100"
-        height="48"
-      ></img>{" "}
-      <a
-        href="http://www.imdb.com/name/nm0295919/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Ken’s IMDB Page
-      </a>{" "}
+      <div className="about__text-div">
+        <img
+          className="about__text-image"
+          src="http://kenfriss.com/wp-content/uploads/2014/12/MV5BMjAzOTcxMDA2Nl5BMl5BcG5nXkFtZTcwMTc1MzIzOA@@._V1_-300x144.png"
+          alt="MV5BMjAzOTcxMDA2Nl5BMl5BcG5nXkFtZTcwMTc1MzIzOA@@._V1_"
+          width="100"
+          height="48"
+        ></img>{" "}
+        <a
+          href="http://www.imdb.com/name/nm0295919/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ken’s IMDB Page
+        </a>{" "}
+      </div>
     </div>
   );
 }

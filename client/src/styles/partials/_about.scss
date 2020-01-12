@@ -24,19 +24,24 @@
 @include medium {
   .about {
     width: 70%;
-    margin-left: 425px;
+    margin-left: 390px;
     margin-bottom: 0;
 
     &__text {
       color: white;
       &-image {
-        width: 100%;
+        width: 15%;
         &-large {
           height: 420px;
-          width: 100%;
+          width: 70%;
+          margin-left: 14%;
           image-rendering: pixelated;
           image-resolution: crisp-edges;
         }
+      }
+      &-div {
+        display: flex;
+        flex-direction: column;
       }
     }
     &__heading {
