@@ -30,12 +30,13 @@ body {
   background-image: url(../assets/photos/pic20.jpg);
   background-repeat: none;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .main__image {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Enforces border-box for site */
@@ -200,7 +201,7 @@ input[type="checkbox"]:checked ~ .header__icon::before {
   }
   .gallery__image {
     width: 47%;
-    height: 250px;
+    height: 300px;
     margin: 10px;
     -webkit-transition: ease 0.1s;
     transition: ease 0.1s;
@@ -211,6 +212,12 @@ input[type="checkbox"]:checked ~ .header__icon::before {
     -webkit-filter: blur(1px);
             filter: blur(1px);
     z-index: 1;
+  }
+  .gallery__image-link {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 

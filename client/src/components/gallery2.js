@@ -13,10 +13,15 @@ export default function Gallery() {
     getImages();
   }, []);
 
+  console.log(images.image);
   const galleryImage =
     images.map &&
     images.map(image => {
-      return <img src={image.image} alt="gallery" className="gallery__image" />;
+      return (
+        <div key={image.id} className="gallery__image">
+          <img src={image.image} alt="gallery" className="gallery__image-link" />
+        </div>
+      );
     });
   console.log(images);
   return <div className="gallery">{galleryImage}</div>;
