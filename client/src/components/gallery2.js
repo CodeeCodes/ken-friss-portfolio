@@ -19,7 +19,12 @@ export default function Gallery() {
     images.map(image => {
       return (
         <div key={image.id} className="gallery__image">
-          <img src={image.image} alt="gallery" className="gallery__image-link" />
+          <h5 className="gallery__overlay">{image.description}</h5>
+          <img
+            src={image.image}
+            alt="gallery"
+            className="gallery__image-link"
+          />
         </div>
       );
     });

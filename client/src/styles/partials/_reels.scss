@@ -1,0 +1,36 @@
+.reels {
+  &__video {
+    &-heading {
+      color: #fff;
+      margin-top: 50px;
+    }
+  }
+  &__div {
+    &-small {
+      width: 370px;
+    }
+  }
+}
+@include medium {
+  .reels {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 22%;
+    padding-top: 10px;
+    &__video {
+      margin: 20px;
+      &-img {
+        height: 100%;
+        width: 100%;
+      }
+      &-heading {
+        padding-left: 4%;
+      }
+    }
+    &__div {
+      &-small {
+        margin: 30px;
+      }
+    }
+  }
+}

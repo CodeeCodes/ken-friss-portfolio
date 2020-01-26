@@ -142,6 +142,30 @@ input[type="checkbox"]:checked ~ .header__icon::before {
   padding-top: 20px;
 }
 
+.header .social__widgets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 40px;
+  margin-top: 300px;
+  margin-bottom: 30px;
+}
+
+.header .social__widgets-image {
+  width: 40px;
+  height: 40px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.header .social__widgets-image:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
 @media only screen and (min-width: 768px) {
   .header__icon {
     display: none;
@@ -161,6 +185,17 @@ input[type="checkbox"]:checked ~ .header__icon::before {
     z-index: 1;
     overflow-y: auto;
     list-style: none;
+  }
+  .header .social__widgets {
+    margin-top: 400px;
+  }
+  .header .social__widgets-image {
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+  }
+  .header .social__widgets-image:hover {
+    -webkit-transform: scale(1.7);
+            transform: scale(1.7);
   }
 }
 
@@ -187,6 +222,21 @@ input[type="checkbox"]:checked ~ .header__icon::before {
       image-rendering: pixelated;
 }
 
+.gallery__image-link {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery__overlay {
+  margin: 0;
+  color: #fff;
+  position: relative;
+  left: 235px;
+  top: 150px;
+}
+
 @media only screen and (min-width: 768px) {
   .gallery {
     padding-left: 400px;
@@ -209,15 +259,49 @@ input[type="checkbox"]:checked ~ .header__icon::before {
   .gallery__image:hover {
     -webkit-transform: scale(1.01);
             transform: scale(1.01);
-    -webkit-filter: blur(1px);
-            filter: blur(1px);
     z-index: 1;
   }
   .gallery__image-link {
-    width: 100%;
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+  }
+  .gallery__image-link:hover {
+    -webkit-filter: unset;
+            filter: unset;
+  }
+}
+
+.reels__video-heading {
+  color: #fff;
+  margin-top: 50px;
+}
+
+.reels__div-small {
+  width: 370px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reels {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 22%;
+    padding-top: 10px;
+  }
+  .reels__video {
+    margin: 20px;
+  }
+  .reels__video-img {
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    width: 100%;
+  }
+  .reels__video-heading {
+    padding-left: 4%;
+  }
+  .reels__div-small {
+    margin: 30px;
   }
 }
 

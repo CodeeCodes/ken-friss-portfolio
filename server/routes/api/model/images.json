@@ -1,94 +1,117 @@
 [
   {
     "id": "1",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/uploads/2014/12/Ken_Friss_Director_About_Page_Image-850x567.jpg"
   },
   {
     "id": "2",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-01.jpg"
   },
   {
     "id": "3",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-02.jpg"
   },
   {
     "id": "4",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-03.jpg"
   },
   {
     "id": "5",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-04.jpg"
   },
   {
     "id": "6",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-05.jpg"
   },
   {
     "id": "7",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-06.jpg"
   },
   {
     "id": "8",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-07.jpg"
   },
   {
     "id": "9",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-08.jpg"
   },
   {
     "id": "10",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-10.jpg"
   },
   {
     "id": "11",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-11.jpg"
   },
   {
     "id": "12",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-12.jpg"
   },
   {
     "id": "13",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-13.jpg"
   },
   {
     "id": "14",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-14.jpg"
   },
   {
     "id": "15",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-15.jpg"
   },
   {
     "id": "16",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-16.jpg"
   },
   {
     "id": "17",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-17.jpg"
   },
   {
     "id": "18",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-18.jpg"
   },
   {
     "id": "19",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-19.jpg"
   },
   {
     "id": "20",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-20.jpg"
   },
   {
     "id": "21",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-21.jpg"
   },
   {
     "id": "22",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-22.jpg"
   },
   {
     "id": "23",
+    "description": "description goes here",
     "image": "http://kenfriss.com/wp-content/gallery/photogallery-noframes/KenFriss-Director-23.jpg"
   }
 ]
