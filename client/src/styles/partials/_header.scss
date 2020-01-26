@@ -121,9 +121,9 @@
     .social__widgets {
       margin-top: 400px;
       &-image {
-        transition: 1s ease;
+        transition: .5s ease;
         &:hover {
-          transform: scale(1.7);
+          transform: scale(1.3);
         }
       }
     }

@@ -29,6 +29,8 @@
 
     &__text {
       color: white;
+      width: 85%;
+      padding-left: 14%;
       &-image {
         width: 15%;
         &-large {
@@ -42,10 +44,12 @@
       &-div {
         display: flex;
         flex-direction: column;
+        padding-left: 14%;
       }
     }
     &__heading {
       color: white;
+      padding-left: 14%;
     }
   }
 }

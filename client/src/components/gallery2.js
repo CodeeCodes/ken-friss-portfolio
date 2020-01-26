@@ -13,7 +13,7 @@ export default function Gallery() {
     getImages();
   }, []);
 
-  console.log(images.image);
+ 
   const galleryImage =
     images.map &&
     images.map(image => {
@@ -28,6 +28,6 @@ export default function Gallery() {
         </div>
       );
     });
-  console.log(images);
+
   return <div className="gallery">{galleryImage}</div>;
 }

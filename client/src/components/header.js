@@ -12,7 +12,10 @@ export default function header() {
       <span className="header__icon"></span>
 
       <ul className="header__list">
-        <h1 className="header__list-heading">Ken Friss</h1>
+        <Link to="/">
+          {" "}
+          <h1 className="header__list-heading">Ken Friss</h1>
+        </Link>
         <li className="header__list-item">
           <Link to="/">Home</Link>
         </li>

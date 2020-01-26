@@ -44,7 +44,7 @@
         z-index: 1;
       }
       &-link {
-        filter: blur(1px);
+        filter: blur(2.5px);
         &:hover {
           filter: unset;
         }

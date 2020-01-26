@@ -1,18 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
+import axios from "axios";
+const reelsURl = `http://localhost:5000/reels`;
 
 export default function Reels() {
-  const reelsUrl = [
-    { url: "https://www.youtube.com/watch?v=aYsrZR2PcSc" },
-    { url: "https://www.youtube.com/watch?v=9luDsszk8yY" },
-    { url: "https://www.youtube.com/watch?v=BHjhYfDunqQ" },
-    { url: "https://www.youtube.com/watch?v=0f-HOXTHxok" },
-    { url: "https://www.youtube.com/watch?v=Y54dfdonqgM" },
-    { url: "https://www.youtube.com/watch?v=c9of9E0e9co" }
-  ];
+  const [reels, setReels] = useState([]);
 
-  const mappedReels = reelsUrl.map(reel => (
-    <div className="reels__div-small">
+  const getReels = () => {
+    axios.get(reelsURl).then(res => {
+      setReels(res.data);
+    });
+  };
+
+  useEffect(() => {
+    getReels();
+  }, []);
+
+  const mappedReels = reels.map((reel, index) => (
+    <div className="reels__div-small" key={index}>
       <h2 className="reels__video-heading">VIDEO</h2>
       <ReactPlayer
         url={reel.url}
