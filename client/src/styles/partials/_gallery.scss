@@ -19,9 +19,9 @@
   &__overlay {
     margin: 0;
     color: #fff;
-    position: relative;
-    left: 235px;
-    top: 150px;
+    // position: relative;
+    // left: 235px;
+    // top: 150px;
   }
 }
 
@@ -42,12 +42,6 @@
       &:hover {
         transform: scale(1.01);
         z-index: 1;
-      }
-      &-link {
-        filter: blur(2.5px);
-        &:hover {
-          filter: unset;
-        }
       }
     }
   }

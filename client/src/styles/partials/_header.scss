@@ -44,8 +44,8 @@
     left: 0;
     margin: 0;
     box-sizing: border-box;
-    width: 350px;
-    left: -350px;
+    width: 375px;
+    left: -375px;
     height: 100vh;
     background-color: $black;
     transition: 0.5s;
@@ -121,7 +121,7 @@
     .social__widgets {
       margin-top: 400px;
       &-image {
-        transition: .5s ease;
+        transition: 0.5s ease;
         &:hover {
           transform: scale(1.3);
         }

@@ -13,13 +13,12 @@ export default function Gallery() {
     getImages();
   }, []);
 
- 
   const galleryImage =
     images.map &&
     images.map(image => {
       return (
         <div key={image.id} className="gallery__image">
-          <h5 className="gallery__overlay">{image.description}</h5>
+          {/* <h5 className="gallery__overlay">{image.description}</h5> */}
           <img
             src={image.image}
             alt="gallery"
