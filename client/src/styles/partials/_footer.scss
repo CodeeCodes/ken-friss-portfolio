@@ -1,0 +1,47 @@
+.footer {
+  width: 100vw;
+  height: 400px;
+  background-color: $black;
+  &__header {
+    color: rgba(255, 255, 255, 0.311);
+  }
+  .social__widgets {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100vw;
+    background-color: #212121;
+    margin-top: 212px;
+    &-image {
+      width: 40px;
+      height: 40px;
+      transition: 1s ease;
+      &:hover {
+        transform: scale(1.4);
+      }
+    }
+    &-div {
+      &-small {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include medium {
+  .footer {
+    width: 100vw;
+    height: 400px;
+    background-color: $black;
+
+    .social__widgets {
+      margin-top: 231px;
+      &-image {
+        transition: 0.5s ease;
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+}

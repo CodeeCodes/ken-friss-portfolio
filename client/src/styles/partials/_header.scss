@@ -1,61 +1,24 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 375px;
+  left: -375px;
+  height: 100vh;
+  background-color: $black;
+  transition: 0.5s;
+  z-index: 1;
+  overflow-y: auto;
+  list-style: none;
   &__heading {
     color: $red;
   }
-  input[type="checkbox"] {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 50px;
-    height: 50px;
-    z-index: 3;
-    opacity: 0;
-    cursor: pointer;
-  }
-  input[type="checkbox"]:checked ~ &__icon::before {
-    content: "Close";
-  }
-  &__icon {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    z-index: 2;
-    background-color: $black;
-  }
-  &__icon::before {
-    content: "Menu";
-    position: absolute;
-    top: 0;
+  &.burger-active {
     left: 0;
-    right: 0;
-    bottom: 0;
-    color: $red;
-    text-align: center;
-    line-height: 50px;
-    font-weight: 700;
   }
 
-  ul {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    box-sizing: border-box;
-    width: 375px;
-    left: -375px;
-    height: 100vh;
-    background-color: $black;
-    transition: 0.5s;
-    z-index: 1;
-    overflow-y: auto;
-    list-style: none;
-  }
-  input[type="checkbox"]:checked ~ ul {
-    left: 0;
-  }
   ul li a {
     display: block;
     padding: 10px;
@@ -70,6 +33,8 @@
     }
   }
   &__list {
+    list-style: none;
+    text-decoration: none;
     &-image {
       width: 250px;
       height: 250px;
@@ -82,25 +47,22 @@
       padding-top: 20px;
     }
   }
-  .social__widgets {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 40px;
-    margin-top: 300px;
-    margin-bottom: 30px;
-    &-image {
-      width: 40px;
-      height: 40px;
-      transition: 1s ease;
-      &:hover {
-        transform: scale(1.4);
-      }
-    }
-  }
 }
 
 @include medium {
   .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100px;
+    background-color: #fff;
+    transition: 0.5s;
+    z-index: 1;
+    list-style: none;
+    display: flex;
     &__icon {
       display: none;
     }
@@ -110,22 +72,13 @@
       left: 0;
       margin: 0;
       box-sizing: border-box;
-      width: 350px;
-      height: 100vh;
-      background-color: $black;
+      width: 100vw;
+      height: 100px;
+      background-color: #151515;
       transition: 0.5s;
       z-index: 1;
-      overflow-y: auto;
       list-style: none;
-    }
-    .social__widgets {
-      margin-top: 400px;
-      &-image {
-        transition: 0.5s ease;
-        &:hover {
-          transform: scale(1.3);
-        }
-      }
+      display: flex;
     }
   }
 }

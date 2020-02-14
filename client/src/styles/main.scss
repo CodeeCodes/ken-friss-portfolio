@@ -20,7 +20,7 @@ body {
 #root,
 .App,
 body {
-  background-color: $gray;
+  background-color: $grey;
 }
 .main {
   width: 100vw;
@@ -44,6 +44,8 @@ body {
 }
 
 @import "./partials/header";
+@import "./partials/burger";
 @import "./partials/gallery";
 @import "./partials/reels";
 @import "./partials/about";
+@import "./partials/footer";

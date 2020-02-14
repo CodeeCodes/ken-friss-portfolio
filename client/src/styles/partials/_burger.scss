@@ -1,0 +1,36 @@
+.burger {
+  z-index: 1;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  & div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 4px;
+    margin: 5px;
+    transition: all 0.8s ease;
+  }
+}
+.burger-active {
+  transform: translateY(0%);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.toggle .lineOne {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .lineTwo {
+  opacity: 0;
+}
+.toggle .lineThree {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
