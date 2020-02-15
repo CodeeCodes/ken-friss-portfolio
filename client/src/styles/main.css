@@ -222,10 +222,19 @@ body {
   }
 }
 
+.gallery {
+  margin-top: 60px;
+}
+
+.gallery__heading {
+  margin-left: 17%;
+  color: #fff;
+}
+
 .carousel {
   position: relative;
   height: 600px;
-  width: 80%;
+  width: 95%;
   margin: 60px auto;
 }
 
@@ -243,9 +252,9 @@ body {
 }
 
 .carousel__track-container {
-  padding: 10px;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .carousel__slide {
@@ -253,6 +262,52 @@ body {
   top: 0;
   bottom: 0;
   width: 100%;
+}
+
+.carousel__button {
+  background-color: #40434e;
+  border: 0;
+  position: absolute;
+  bottom: -60px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.carousel__button--left {
+  width: 20px;
+  height: 20px;
+  left: -5px;
+}
+
+.carousel__button--right {
+  width: 20px;
+  height: 20px;
+  right: -5px;
+}
+
+.carousel__button img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #151515;
+  opacity: 0.2;
+  margin: 0 15px;
+}
+
+.carousel__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -281,10 +336,8 @@ body {
     transition: transform ease-in 1.5s, -webkit-transform ease-in 1.5s;
   }
   .carousel__track-container {
-    padding: 10px;
     height: 100%;
     position: relative;
-    overflow: hidden;
   }
   .carousel__slide {
     position: absolute;
@@ -294,15 +347,18 @@ body {
   }
   .carousel__button {
     z-index: 111111;
-    position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
   .carousel__button--left {
+    width: 50px;
+    height: 50px;
     left: -90px;
   }
   .carousel__button--right {
+    width: 50px;
+    height: 50px;
     right: -90px;
   }
   .carousel__nav {
@@ -320,7 +376,6 @@ body {
     width: 20px;
     height: 20px;
     background-color: #151515;
-    opacity: 0.3;
     margin: 0 12px;
   }
   .carousel__indicator.current-slide {

@@ -4,7 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import Header from "./components/header";
 import About from "./components/about";
 import Main from "./components/mainContent";
-import Gallery from "./components/gallery2";
+import Gallery from "./components/gallery";
 import Reels from "./components/reels";
 import Footer from "./components/footer";
 

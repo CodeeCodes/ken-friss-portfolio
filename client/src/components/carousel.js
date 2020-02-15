@@ -1,4 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
+import nextSvg from "../assets/svg/next.svg";
+import prevSvg from "../assets/svg/back.svg";
 // import axios from "axios";
 // const imagesURl = `http://localhost:5000/images`;
 import pic1 from "../assets/photos/pic1.jpg";
@@ -21,7 +23,8 @@ import pic17 from "../assets/photos/pic17.jpg";
 import pic18 from "../assets/photos/pic18.jpg";
 import pic19 from "../assets/photos/pic19.jpg";
 
-export default function Gallery() {
+export default function Carousel() {
+  // const [isHidden, setIsHidden] = useState(true);
   const [images, setImages] = useState([
     pic1,
     pic2,
@@ -78,8 +81,6 @@ export default function Gallery() {
     const slides = Array.from(track.children);
     const nextButton = document.querySelector(".carousel__button--right");
     const prevButton = document.querySelector(".carousel__button--left");
-    const dotNav = document.querySelector(".carousel__nav");
-    const dots = Array.from(dotNav.children);
     const currentSlide = track.querySelector(".current-slide");
     const nextSlide = currentSlide.nextElementSibling;
 
@@ -98,8 +99,6 @@ export default function Gallery() {
   // move to slide
   const moveToSlide = (track, currentSlide, nextSlide) => {
     var currentSlide = track.querySelector(".current-slide");
-    var nextSlide = currentSlide.nextElementSibling;
-    console.log(nextSlide);
     track.style.transform = "translateX(-" + nextSlide.style.left + ")";
   };
   //when I click left, move slides to the left
@@ -128,16 +127,37 @@ export default function Gallery() {
     track.style.transform = "translateX(-" + amountToMove + ")";
     track.style.height = "600px";
     moveToSlide(track, currentSlide, nextSlide);
-    console.log(amountToMove);
+  };
+
+  //when clicked on nav indicator, move to that slide
+  const changeDots = e => {
+    e.persist();
+    //which indicator is clicked
+    console.log(e);
+    const targetDot = e.target.closest("button");
+    if (!targetDot) return;
+
+    const track = document.querySelector(".carousel__track");
+    const slides = Array.from(track.children);
+    const currentSlide = track.querySelector(".current-slide");
+    const dotNav = document.querySelector(".carousel__nav");
+    const dots = Array.from(dotNav.children);
+    const currentDot = dotNav.querySelector(".current-slide");
+    const targetIndex = dots.findIndex(dot => dot == targetDot);
+    const targetSlide = slides[targetIndex];
+    console.log(targetIndex);
+    e.target.style.background = "black";
+    e.target.style.opacity = "1";
+    // changeDots(currentSlide, targetDot);
   };
 
   return (
     <div className="carousel">
       <button
-        className="carousel__button carousel__button--left"
+        className="carousel__button carousel__button--left is-hidden"
         onClick={moveLeft}
       >
-        Prev
+        <img src={prevSvg} alt="" />
       </button>
       <div className="carousel__track-container">
         <ul className="carousel__track" ref={refInput}>
@@ -148,12 +168,12 @@ export default function Gallery() {
         className="carousel__button carousel__button--right"
         onClick={moveRight}
       >
-        Next
+        <img src={nextSvg} alt="" />
       </button>
       <div className="carousel__nav">
-        <button className="carousel__indicator"></button>
-        <button className="carousel__indicator"></button>
-        <button className="carousel__indicator"></button>
+        <button className="carousel__indicator" onClick={changeDots}></button>
+        <button className="carousel__indicator" onClick={changeDots}></button>
+        <button className="carousel__indicator" onClick={changeDots}></button>
       </div>
     </div>
   );
