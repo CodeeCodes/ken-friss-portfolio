@@ -186,12 +186,17 @@ export default function Carousel() {
     const track = document.querySelector(".carousel__track");
     const currentSlide = track.querySelector(".current-slide");
     const prevSlide = currentSlide.previousElementSibling;
+    const nextSlide = currentSlide.nextElementSibling;
     const amountToMove = prevSlide.style.left;
     currentSlide.classList.remove("current-slide");
     prevSlide.classList.add("current-slide");
+
     //move to next slide
     track.style.transform = "translateX(-" + amountToMove + ")";
+    currentSlide.style.transition = "ease 2s";
     track.style.height = "600px";
+    nextSlide.style.opacity = "0";
+    prevSlide.style.opacity = "1";
     moveToSlide(track, currentSlide, prevSlide);
     console.log(amountToMove);
   };
@@ -206,6 +211,9 @@ export default function Carousel() {
     //move to next slide
     track.style.transform = "translateX(-" + amountToMove + ")";
     track.style.height = "600px";
+    currentSlide.style.transition = "ease 1s";
+    currentSlide.style.opacity = "0";
+    nextSlide.style.opacity = "1";
     moveToSlide(track, currentSlide, nextSlide);
   };
 
@@ -223,7 +231,7 @@ export default function Carousel() {
     const dotNav = document.querySelector(".carousel__nav");
     const dots = Array.from(dotNav.children);
     const currentDot = dotNav.querySelector(".current-slide");
-    const targetIndex = dots.findIndex(dot => dot == targetDot);
+    const targetIndex = dots.findIndex(dot => dot === targetDot);
     const targetSlide = slides[targetIndex];
     console.log(targetIndex);
     e.target.style.background = "black";
