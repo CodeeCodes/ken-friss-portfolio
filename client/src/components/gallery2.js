@@ -82,7 +82,6 @@ export default function Gallery() {
     const dots = Array.from(dotNav.children);
     const currentSlide = track.querySelector(".current-slide");
     const nextSlide = currentSlide.nextElementSibling;
-    const amountToMove = nextSlide.style.left;
 
     const slideWidth = slides[0].getBoundingClientRect().width;
 
@@ -98,29 +97,48 @@ export default function Gallery() {
 
   // move to slide
   const moveToSlide = (track, currentSlide, nextSlide) => {
+    var currentSlide = track.querySelector(".current-slide");
+    var nextSlide = currentSlide.nextElementSibling;
     console.log(nextSlide);
     track.style.transform = "translateX(-" + nextSlide.style.left + ")";
-    currentSlide.classList.remove("current-slide");
-    nextSlide.classList.add("current-slide");
   };
   //when I click left, move slides to the left
   const moveLeft = () => {
     const track = document.querySelector(".carousel__track");
     const currentSlide = track.querySelector(".current-slide");
     const prevSlide = currentSlide.previousElementSibling;
+    const amountToMove = prevSlide.style.left;
+    currentSlide.classList.remove("current-slide");
+    prevSlide.classList.add("current-slide");
+    //move to next slide
+    track.style.transform = "translateX(-" + amountToMove + ")";
+    track.style.height = "600px";
     moveToSlide(track, currentSlide, prevSlide);
+    console.log(amountToMove);
   };
   //when I click right move slides to the right
   const moveRight = () => {
     const track = document.querySelector(".carousel__track");
     const currentSlide = track.querySelector(".current-slide");
-    const nextSlide = currentSlide.previousElementSibling;
+    const nextSlide = currentSlide.nextElementSibling;
+    const amountToMove = nextSlide.style.left;
+    currentSlide.classList.remove("current-slide");
+    nextSlide.classList.add("current-slide");
+    //move to next slide
+    track.style.transform = "translateX(-" + amountToMove + ")";
+    track.style.height = "600px";
     moveToSlide(track, currentSlide, nextSlide);
+    console.log(amountToMove);
   };
 
   return (
     <div className="carousel">
-      <button className="carousel__button carousel__button--left">Prev</button>
+      <button
+        className="carousel__button carousel__button--left"
+        onClick={moveLeft}
+      >
+        Prev
+      </button>
       <div className="carousel__track-container">
         <ul className="carousel__track" ref={refInput}>
           {galleryImage}
