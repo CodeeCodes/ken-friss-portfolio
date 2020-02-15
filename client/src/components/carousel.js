@@ -22,6 +22,46 @@ import pic16 from "../assets/photos/pic16.jpg";
 import pic17 from "../assets/photos/pic17.jpg";
 import pic18 from "../assets/photos/pic18.jpg";
 import pic19 from "../assets/photos/pic19.jpg";
+import pic20 from "../assets/photos/pic20.jpg";
+import pic21 from "../assets/photos/pic21.jpg";
+import pic22 from "../assets/photos/pic22.jpg";
+import pic23 from "../assets/photos/pic23.jpg";
+import pic24 from "../assets/photos/pic24.jpg";
+import pic25 from "../assets/photos/pic25.jpg";
+import pic26 from "../assets/photos/pic26.jpg";
+import pic27 from "../assets/photos/pic27.jpg";
+import pic28 from "../assets/photos/pic28.jpg";
+import pic29 from "../assets/photos/pic29.jpg";
+import pic30 from "../assets/photos/pic30.jpg";
+import pic31 from "../assets/photos/pic31.jpg";
+import pic32 from "../assets/photos/pic32.jpg";
+import pic33 from "../assets/photos/pic33.jpg";
+import pic34 from "../assets/photos/pic34.jpg";
+import pic35 from "../assets/photos/pic35.jpg";
+import pic36 from "../assets/photos/pic36.jpg";
+import pic37 from "../assets/photos/pic37.jpg";
+import pic38 from "../assets/photos/pic38.jpg";
+import pic39 from "../assets/photos/pic39.jpg";
+import pic40 from "../assets/photos/pic40.jpg";
+import pic41 from "../assets/photos/pic41.jpg";
+import pic42 from "../assets/photos/pic42.jpg";
+import pic43 from "../assets/photos/pic43.jpg";
+import pic44 from "../assets/photos/pic44.jpg";
+import pic45 from "../assets/photos/pic45.jpg";
+import pic46 from "../assets/photos/pic46.jpg";
+import pic47 from "../assets/photos/pic47.jpg";
+import pic48 from "../assets/photos/pic48.jpg";
+import pic49 from "../assets/photos/pic49.jpg";
+import pic50 from "../assets/photos/pic50.jpg";
+import pic51 from "../assets/photos/pic51.jpg";
+import pic52 from "../assets/photos/pic52.jpg";
+import pic53 from "../assets/photos/pic53.jpg";
+import pic54 from "../assets/photos/pic54.jpg";
+import pic55 from "../assets/photos/pic55.jpg";
+import pic56 from "../assets/photos/pic56.jpg";
+import pic57 from "../assets/photos/pic57.jpg";
+import pic58 from "../assets/photos/pic58.jpg";
+import pic59 from "../assets/photos/pic59.jpg";
 
 export default function Carousel() {
   // const [isHidden, setIsHidden] = useState(true);
@@ -44,7 +84,47 @@ export default function Carousel() {
     pic16,
     pic17,
     pic18,
-    pic19
+    pic19,
+    pic20,
+    pic21,
+    pic22,
+    pic23,
+    pic24,
+    pic25,
+    pic26,
+    pic27,
+    pic28,
+    pic29,
+    pic30,
+    pic31,
+    pic32,
+    pic33,
+    pic34,
+    pic35,
+    pic36,
+    pic37,
+    pic38,
+    pic39,
+    pic40,
+    pic41,
+    pic42,
+    pic43,
+    pic44,
+    pic45,
+    pic46,
+    pic47,
+    pic48,
+    pic49,
+    pic50,
+    pic51,
+    pic52,
+    pic53,
+    pic54,
+    pic55,
+    pic56,
+    pic57,
+    pic58,
+    pic59
   ]);
 
   // const getImages = () => {

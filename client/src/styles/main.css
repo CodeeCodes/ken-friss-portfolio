@@ -330,10 +330,10 @@ body {
     list-style: none;
     position: relative;
     height: 100%;
-    -webkit-transition: -webkit-transform ease-in 1.5s;
-    transition: -webkit-transform ease-in 1.5s;
-    transition: transform ease-in 1.5s;
-    transition: transform ease-in 1.5s, -webkit-transform ease-in 1.5s;
+    -webkit-transition: -webkit-transform ease 1.5s;
+    transition: -webkit-transform ease 1.5s;
+    transition: transform ease 1.5s;
+    transition: transform ease 1.5s, -webkit-transform ease 1.5s;
   }
   .carousel__track-container {
     height: 100%;
