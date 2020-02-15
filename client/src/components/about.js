@@ -1,5 +1,6 @@
 import React from "react";
 import profilePic from "../assets/photos/ken-profile.jpg";
+import profilePic2 from "../assets/photos/pic19.jpg";
 
 export default function About() {
   return (
@@ -25,6 +26,13 @@ export default function About() {
         Emmy-winning series The Haunting Hour and a fourth nomination for Hub
         Network’s Spooksville.
       </p>
+      <img
+        className="about__text-image-large"
+        src={profilePic2}
+        alt="Ken_Friss_Director_About_Page"
+        width="850"
+        height="567"
+      ></img>
       <p className="about__text">
         Ken is a spirited and passionate director who is known for his energy
         and enthusiasm on set. He likes to challenge himself and currently has

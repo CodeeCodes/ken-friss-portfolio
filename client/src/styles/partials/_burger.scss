@@ -1,8 +1,8 @@
 .burger {
-  z-index: 1;
-  position: absolute;
-  top: 15px;
-  right: 10px;
+  z-index: 1000000;
+  position: fixed;
+  top: 23px;
+  right: 13px;
   & div {
     width: 25px;
     height: 3px;
@@ -33,4 +33,9 @@
 }
 .toggle .lineThree {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+@include medium {
+  .burger {
+    display: none;
+  }
 }

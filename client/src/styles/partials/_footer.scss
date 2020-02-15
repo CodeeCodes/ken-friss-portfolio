@@ -9,8 +9,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100vw;
-    background-color: #212121;
+    // width: 100vw;
     margin-top: 212px;
     &-image {
       width: 40px;
@@ -33,6 +32,7 @@
     width: 100vw;
     height: 400px;
     background-color: $black;
+    padding: 0 17.5%;
 
     .social__widgets {
       margin-top: 231px;
@@ -42,6 +42,17 @@
           transform: scale(1.3);
         }
       }
+      &-div {
+        &-small {
+          width: 29%;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+    &__header {
+      margin: 0;
+      padding-top: 5px;
     }
   }
 }
