@@ -159,10 +159,6 @@ export default function Carousel() {
   const slider = () => {
     const track = document.querySelector(".carousel__track");
     const slides = Array.from(track.children);
-    const nextButton = document.querySelector(".carousel__button--right");
-    const prevButton = document.querySelector(".carousel__button--left");
-    const currentSlide = track.querySelector(".current-slide");
-    const nextSlide = currentSlide.nextElementSibling;
 
     const slideWidth = slides[0].getBoundingClientRect().width;
 
@@ -178,7 +174,6 @@ export default function Carousel() {
 
   // move to slide
   const moveToSlide = (track, currentSlide, nextSlide) => {
-    var currentSlide = track.querySelector(".current-slide");
     track.style.transform = "translateX(-" + nextSlide.style.left + ")";
   };
   //when I click left, move slides to the left
@@ -190,16 +185,16 @@ export default function Carousel() {
     const amountToMove = prevSlide.style.left;
     currentSlide.classList.remove("current-slide");
     prevSlide.classList.add("current-slide");
-
     //move to next slide
     track.style.transform = "translateX(-" + amountToMove + ")";
-    currentSlide.style.transition = "ease 2s";
+    currentSlide.style.transition = "ease 1s";
     track.style.height = "600px";
-    nextSlide.style.opacity = "0";
+    currentSlide.style.opacity = "0";
     prevSlide.style.opacity = "1";
     moveToSlide(track, currentSlide, prevSlide);
     console.log(amountToMove);
   };
+
   //when I click right move slides to the right
   const moveRight = () => {
     const track = document.querySelector(".carousel__track");
@@ -224,15 +219,12 @@ export default function Carousel() {
     console.log(e);
     const targetDot = e.target.closest("button");
     if (!targetDot) return;
-
-    const track = document.querySelector(".carousel__track");
-    const slides = Array.from(track.children);
-    const currentSlide = track.querySelector(".current-slide");
+    // const track = document.querySelector(".carousel__track");
+    // const slides = Array.from(track.children);
     const dotNav = document.querySelector(".carousel__nav");
     const dots = Array.from(dotNav.children);
-    const currentDot = dotNav.querySelector(".current-slide");
     const targetIndex = dots.findIndex(dot => dot === targetDot);
-    const targetSlide = slides[targetIndex];
+    // const targetSlide = slides[targetIndex];
     console.log(targetIndex);
     e.target.style.background = "black";
     e.target.style.opacity = "1";

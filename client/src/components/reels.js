@@ -23,7 +23,7 @@ export default function Reels() {
         url={reel.url}
         paused={"true"}
         width="375px"
-        height="600px"
+        height="300px"
         controls
         className="reels__video"
       />
